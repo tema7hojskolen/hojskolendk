@@ -1,8 +1,23 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Button from "../components/Button.astro";
+import "../css/index.css";
 ---
 
 <Layout>
-    <h1>Forside</h1>
+  <section class="hero">
+    <div class="hero__content">
+      <h1>Dit højskoleeventyr starter her</h1>
+
+      <p>
+        HØJSKOLENDK er en dansk højskole for unge i alderen 18–26 år.
+        Vi brænder for oplevelser, fællesskabet og det gode eventyr.
+      </p>
+
+      <div class="hero__actions">
+        <Button title="Se rejsekalender" variant="primary" />
+        <Button title="Infomøder" variant="secondary" />
+      </div>
+    </div>
+  </section>
 </Layout>
