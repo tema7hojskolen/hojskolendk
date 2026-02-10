@@ -1,0 +1,43 @@
+.hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  /* placeholder hero-baggrund indtil du smider img ind */
+  background: radial-gradient(circle at center, #e5e5e5 0%, #cfcfcf 100%);
+  padding: 4rem 1.5rem;
+}
+
+.hero__content {
+  max-width: 720px;
+}
+
+.hero__content h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(2.6rem, 5vw, 4.2rem);
+  font-weight: 800;
+  line-height: 1.05;
+  color: #fff;
+}
+
+.hero__content p {
+  margin: 0 auto 2rem;
+  max-width: 560px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.hero__actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* sørger for at dine Button-komponenters <button> ikke bliver alt for små */
+.hero__actions :global(button) {
+  min-width: 180px;
+}
