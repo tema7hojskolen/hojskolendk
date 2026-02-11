@@ -1,0 +1,62 @@
+---
+const { titel, cta, billede, variant } = Astro.props;
+---
+
+<article
+  class={`rejse-kort ${variant}`}
+  style={`background-image: url(${billede});`}>
+  
+  <div class="rejse-kort__indhold">
+    <h3 class="rejse-kort__titel">{titel}</h3>
+    {cta && <p class="rejse-kort__cta">{cta}</p>}
+  </div>
+
+</article>
+
+<style>
+  .rejse-kort {
+    grid-column: span 2;
+    min-height: 240px;
+    border-radius: 24px;
+    padding: 24px;
+    overflow: hidden;
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+  }
+
+  .rejse-kort::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0.1));
+}
+
+.rejse-kort__indhold {
+  position: relative;
+  z-index: 1;
+}
+
+  .stor {
+    grid-column: span 3;
+    min-height: 280px;
+  }
+
+  .rejse-kort__titel {
+    margin: 0;
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+  }
+
+  .rejse-kort__cta {
+    margin-top: 12px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+  }
+</style>

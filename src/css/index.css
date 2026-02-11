@@ -6,7 +6,10 @@
   text-align: center;
 
   /* placeholder hero-baggrund indtil du smider img ind */
-  background: radial-gradient(circle at center, #e5e5e5 0%, #cfcfcf 100%);
+  background-image: url("/img_mockup/hero_billede.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 4rem 1.5rem;
 }
 
@@ -28,6 +31,9 @@
   font-size: 1.05rem;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.85);
+  background: rgba(0, 0, 0, 0.4);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
 }
 
 .hero__knapper {
@@ -40,4 +46,45 @@
 /* sørger for at dine Button-komponenters <button> ikke bliver alt for små */
 .hero__knapper :global(button) {
   min-width: 180px;
+}
+
+/* SEKTION 2 */
+.rejser {
+  padding: 64px 24px;
+  background: #f3f3f3;
+}
+
+/* samme container-bredde som grid */
+.rejser__top {
+  max-width: 1100px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.rejser__top h2 {
+  font-size: 48px;
+  margin: 0 0 16px;
+}
+
+.rejser__top p {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* bund centreres også */
+.rejser__bund {
+  max-width: 1100px;
+  margin: 40px auto 0;
+  text-align: center;
+}
+
+/* grid */
+
+.rejser__grid {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 24px;
 }
