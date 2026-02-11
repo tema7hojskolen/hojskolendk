@@ -10,11 +10,11 @@
   padding: 4rem 1.5rem;
 }
 
-.hero__content {
+.hero__indhold {
   max-width: 720px;
 }
 
-.hero__content h1 {
+.hero__indhold h1 {
   margin: 0 0 1rem;
   font-size: clamp(2.6rem, 5vw, 4.2rem);
   font-weight: 800;
@@ -22,7 +22,7 @@
   color: #fff;
 }
 
-.hero__content p {
+.hero__indhold p {
   margin: 0 auto 2rem;
   max-width: 560px;
   font-size: 1.05rem;
@@ -30,7 +30,7 @@
   color: rgba(255, 255, 255, 0.85);
 }
 
-.hero__actions {
+.hero__knapper {
   display: flex;
   gap: 1rem;
   justify-content: center;
@@ -38,6 +38,6 @@
 }
 
 /* sørger for at dine Button-komponenters <button> ikke bliver alt for små */
-.hero__actions :global(button) {
+.hero__knapper :global(button) {
   min-width: 180px;
 }
