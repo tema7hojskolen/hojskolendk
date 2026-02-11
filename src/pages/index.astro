@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Button from "../components/Button.astro";
+import RejseKort from "../components/RejseKort.astro";
 import "../css/index.css";
 ---
 
@@ -16,8 +17,53 @@ import "../css/index.css";
 
       <div class="hero__knapper">
         <Button title="Se rejsekalender" variant="primary" />
-        <Button title="Infomøder" variant="secondary" />
+        <a href="/infomoede"><Button title="Tilmeld dig infomøde" variant="secondary" /></a>
       </div>
     </div>
   </section>
+<section class="rejser">
+  <div class="rejser__top">
+    <h2>Vælg dit eventyr</h2>
+    <p>
+      HØJSKOLENDK er en dansk højskole for unge i alderen 18–28 år.
+      Vi brænder for oplevelser, fællesskabet og det gode eventyr.
+    </p>
+  </div>
+
+  <div class="rejser__grid">
+  <RejseKort
+    titel="Maldiverne, Sri Lanka, Bali, Gili Islands, Japan, Australien"
+    cta="Se afgange"
+    billede="/img_mockup/maldiverne.jpeg"
+  />
+
+  <RejseKort
+    titel="Brasilien, Colombia, Costa Rica, Mexico"
+    billede="/img_mockup/brasilien.jpeg"
+  />
+
+  <RejseKort
+    titel="Australien, New Zealand, Vietnam, Bali, Gili Islands, Lombok"
+    billede="/img_mockup/australien.jpeg"
+  />
+
+  <RejseKort
+    titel="Hawaii, Australien, Japan, Bali, Gili Islands"
+    billede="/img_mockup/hawaii.jpeg"
+    variant="stor"
+  />
+
+  <RejseKort
+    titel="Maldiverne, Sri Lanka, Bali, Gili Islands"
+    billede="/img_mockup/gili-islands.jpeg"
+    variant="stor"
+  />
+</div>
+
+
+  <div class="rejser__bund">
+    <Button title="Se alle rejser" variant="primary" />
+  </div>
+</section>
+
 </Layout>
