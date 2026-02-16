@@ -1,9 +1,9 @@
 ---
-const { titel, cta, billede, variant } = Astro.props;
+const { titel, cta, billede } = Astro.props;
 ---
 
 <article
-  class={`rejse-kort ${variant}`}
+  class="rejse-kort"
   style={`background-image: url(${billede});`}>
   
   <div class="rejse-kort__indhold">
@@ -30,20 +30,15 @@ const { titel, cta, billede, variant } = Astro.props;
   }
 
   .rejse-kort::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0.1));
-}
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0.1));
+  }
 
-.rejse-kort__indhold {
-  position: relative;
-  z-index: 1;
-}
-
-  .stor {
-    grid-column: span 3;
-    min-height: 280px;
+  .rejse-kort__indhold {
+    position: relative;
+    z-index: 1;
   }
 
   .rejse-kort__titel {
