@@ -88,3 +88,7 @@
   grid-template-columns: repeat(6, 1fr);
   gap: 24px;
 }
+.rejser__grid > :nth-child(4),
+.rejser__grid > :nth-child(5) {
+  grid-column: span 3;
+}
