@@ -1,20 +1,16 @@
 ---
 import Button from "../components/Button.astro";
+import Nav from "../components/Nav.astro";
+import Topbar from "../components/Topbar.astro";
 ---
 
+<Topbar />
 <header class="header">
   <div class="header__container">
 
     <a href="/" class="header__logo">HØJSKOLENDK</a>
 
-    <nav class="header__nav">
-      <a href="#">Rejsekalender</a>
-      <a href="#">Højskoleophold</a>
-      <a href="#">Sommerhøjskole</a>
-      <a href="#">Priser</a>
-      <a href="/about">Om os</a>
-      <a href="/contact">Kontakt os</a>
-    </nav>
+<Nav />
 
     <div class="header__handlinger">
       <a href="/infomoede"><Button title="Infomøde" variant="secondary" /></a>
@@ -44,20 +40,6 @@ import Button from "../components/Button.astro";
     font-weight: 800;
     text-decoration: none;
     color: black;
-  }
-
-  .header__nav {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-  }
-
-  .header__nav a {
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
-    font-size: 0.95rem;
   }
 
   .header__handlinger {
