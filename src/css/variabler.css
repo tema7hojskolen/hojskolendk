@@ -1,0 +1,22 @@
+:root {
+  /* ===== BRAND ===== */
+  --color-brand: #f26419;
+  --color-brand-hover: #d95412;
+
+  /* ===== ACCENT ===== */
+  --color-accent: #0f4c5c;
+  --color-accent-hover: #0c3e46;
+
+  /* ===== BACKGROUNDS ===== */
+  --color-bg-primary: #f4efe7;
+  --color-bg-white: #ffffff;
+  --color-bg-footer: #1f2d36;
+
+  /* ===== TEXT ===== */
+  --color-text-primary: #1f2d36;
+  --color-text-light: #ffffff;
+  --color-text-muted: #6c757d;
+
+  /* ===== BORDERS ===== */
+  --color-border-light: #e6ded2;
+}
