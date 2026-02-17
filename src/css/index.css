@@ -6,7 +6,7 @@
   text-align: center;
 
   /* placeholder hero-baggrund indtil du smider img ind */
-  background-image: url("/img_mockup/hero_billede.jpg");
+  background-image: url("src/images/hero_billede.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
