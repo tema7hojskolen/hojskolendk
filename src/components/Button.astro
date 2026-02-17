@@ -8,22 +8,30 @@ const { title, variant } = Astro.props;
 
 <style>
   button {
-    padding: 0.9rem 1.6rem;
+    padding: 0.8rem 1.5rem;
     border-radius: 12px;
     border: none;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 600;
     cursor: pointer;
   }
 
   .primary {
-    background-color: #d65a1f;
-    color: white;
+    background-color: var(--color-brand);
+    color: var(--color-text-light);
+  }
+
+  .primary:hover {
+    background-color: var(--color-brand-hover);
   }
 
   .secondary {
-    background-color: white;
-    color: #000;
-    border: 1px solid #e0e0e0;
+    background-color: var(--color-accent);
+    color: var(--color-text-light);
+    border: 1px solid var(--color-accent-hover);
   }
+
+.secondary:hover {
+  background-color: var(--color-accent-hover);
+}
 </style>
