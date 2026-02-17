@@ -22,14 +22,22 @@ import Topbar from "../components/Topbar.astro";
 
 <style>
   .header {
-    background: white;
+    background: var(--color-bg-primary);
     border-bottom: 1px solid #eee;
   }
+
+  .header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: white;
+}
+
 
   .header__container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1rem 1.5rem;
+    padding: 1.7rem 2.2rem;
 
     display: flex;
     align-items: center;
